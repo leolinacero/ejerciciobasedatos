@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <section id="ejercicio2">
+
+        
+        <form action="actividad.php" method="post">
+          <fieldset>
+            <h1 class="ej2">Formulario de Registro</h1>
+            <p>
+                <label for="nombre">Nombre:</label> <input name="nombre" type="text" id="nombre" minlength="3" maxlength="12"  required placeholder="">
+            </p>
+            <p>
+                <label for="Apellido">Apellido:</label> <input name="apellido" type="text" id="apellido" minlength="4" maxlength="20" required placeholder="">
+            </p>
+            <p>
+                <label for="email">Email:</label> <input name="email" type="email" id="email" required placeholder="Correo@gmail.com">
+            </p>
+            <p>Fecha de nacimiento: <input name="nacimiento" type="date" id="fechaNacimiento" required min="1920-01-01" max="2006-12-31"></p>
+            <p>
+                <label for="contraseña">Contraseña:</label> <input name="contraseña" required type="password" id="contraseña" minlength="8" maxlength="12"  pattern="(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).+$"> 
+            </p>
+
+            
+            
+            <p> <input type="submit" class="boton" value="Enviar"> </p>
+      
+          </fieldset>
+        </form>
+      </section>
+      
+</body>
+</html>
